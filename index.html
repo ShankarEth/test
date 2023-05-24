@@ -1,0 +1,167 @@
+<!-- Version of html -->
+<!DOCTYPE html>
+<!-- Syntax for HTML
+    <tagname attrName="attrValue">Content</tagname> -->
+<!-- Entire document -->
+<html>
+<!-- Information about webpage -->
+
+<head>
+    <title>My HTML page</title>
+</head>
+
+<!-- Content of web page -->
+
+<body>
+    <!-- Heading tags -->
+    <h1>Page2</h1>
+    <a href="./index2.html">Page3</a>
+    <button onclick="history.back()">Prev</button>
+    <button onclick="history.forward()">Next</button>
+    <a href="#demo">Bookmark - Anchor tags</a>
+    <h1>This is heading</h1>
+    <h2>This is heading</h2>
+    <h3>This is heading</h3>
+    <h4>This is heading</h4>
+    <h5>This is heading</h5>
+    <h6>This is heading</h6>
+    <!-- Paragraph tag -->
+    <p>This is paragraph</p>
+    <!-- bold,italic,underline,big,small -->
+    <p>This text is in <b>bold</b></p>
+    <p>This text is in <i>italic</i></p>
+    <p>This text is in <u>underline</u></p>
+    <!-- Deprecated tag not available in HTML5 -->
+    <p>This text is in <big>big</big></p>
+    <p>This text is in <small>small</small></p>
+
+    <!-- Logical tags -->
+    <p>To print in Java <code>System.out.println("Hello")</code></p>
+    <p>Expired: <del>19/03/2000</del></p>
+    <p>This is cite tag</p>
+    <cite>Cite1</cite>
+    <cite>Cite2</cite>
+    <cite>Cite3</cite>
+    <address>Address1</address>
+    <address>Address2</address>
+    <address>Address3</address>
+    <!-- On hover the text: expansion should be displayed -->
+    <abbr title="HyperText Markup Language">HTML</abbr>
+    <acronym title="HTML">HyperText Markup Language</acronym>
+
+    <!-- Empty tags/Void elements/Self-closing tags -->
+    <p>This is a line which is broken</p>
+    <p>This is a line <br /> which is broken</p>
+    <hr />
+
+    <!-- Table tag -->
+    <!-- 
+            _________________
+            | S.no | Name | Age |
+            |______|______|_____|
+               1     Shankar 80
+            __________________
+                2   Ajesh   20
+            __________________
+         -->
+    <!-- 
+            table -> border,cellpadding,cellspacing
+                    cellpadding->space between content of the cell and border of the cell\
+                    cellspacing->space between two cells
+                    bgcolor->color name
+                    height->measurements(px,cm,in,em,rem,%,vh)
+                    width->measurements(px,cm,in,em,rem,%,vw)
+            td,th -> rowspan,colspan
+          -->
+    <table border="1">
+        <tr>
+            <th colspan="3">S.no</th>
+            <!-- <th>Name</th>
+               <th>Age</th> -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Shankar</td>
+            <td rowspan="2">80</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ajesh</td>
+        </tr>
+    </table>
+
+    <!-- Anchor -> Navigate from one page to another -->
+    <!-- 1. Text navigation
+              2. Image navigation
+              3. Bookmark navigation
+              4. email navigation -->
+
+    <!-- ./ -> relative url
+            https:// -> absoulte -->
+    <h1 id="demo">Anchor tags</h1>
+    <a href="https://www.ethnus.com">Ethnus</a>
+
+    <!-- Add an image in webpage img -->
+
+    <a href="https://www.amazon.com">
+        <img src="C:\Users\SHANKAR NARAYAN\Desktop\images\ethnus-crop.jpg" alt="Ethnus" />
+    </a>
+    <img src="./whatsapp logo.jpg" alt="whatsapp" />
+    <img src="" alt="Alternate text" />
+
+    <a href="mailto:shankar@ethnus.com">Send email</a>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <a href="https://www.ethnus.com" target="_blank">Opens in a new tab</a>
+    <a href="https://www.ethnus.com" target="_self">Opens in a same frame</a>
+    <a href="https://www.ethnus.com" target="_parent">Opens in a parent frame</a>
+    <a href="https://www.ethnus.com" target="_top">Opens in a top frame</a>
+
+    <!-- list tags -->
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ul type="none">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+    </dl>
+
+    <!-- Forms and input -->
+
+    <!-- Audio and Video -->
+    <audio controls>
+        <source src="C:\Users\SHANKAR NARAYAN\Desktop\images\file_example_MP3_1MG.mp3" />
+    </audio>
+
+    <video controls muted>
+        <source src="C:\Users\SHANKAR NARAYAN\Desktop\images\MotivationalVideo.mp4" />
+    </video>
+
+    <!-- Non semantic element -> For understandable for users -->
+
+    <div>
+        This is a header
+    </div>
+
+    <span>This is a span</span>
+    <!-- Semantic -> Understandble block for both user as well as browser -->
+    <header>
+        This is a header
+    </header>
+</body>
+
+</html>
